@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+     <!-- header es la porcion completa de arriba, el h1 es el titulo propiamente dicho
+    (el header podria tener mas de un elemento, por ejemplo una barra buscadora)
+<header> -->
+<header>
+        <h1>Rock Paper Scissors</h1>
+</header>
+
+<div class="score-board">
+    <div id="user-label" class="badge">user</div> <!-- Ambas badge comparten estilo, por eso la misma clase. Cada una tiene una ubicacion unica, por eso un id para cada uno-->
+    <div id="computer-label" class="badge">comp</div>
+    <span id="user-score">0</span> : <span id="computer-score">0</span> <!-- div es elemento en bloque, span es un elemento lineal. Por eso se usa span-->
+</div>
+
+<div class="result">
+    <p>Paper covers rock. You win!</p>
+</div>
+
+<div class="choices">
+    <div class="choice" id="rock">
+        <img src="images/rock.png" width = "120" height = "120" alt="">
+    </div>
+    <div class="choice" id=paper"">
+        <img src="images/paper.png" width = "120" height = "120" alt="">
+    </div>
+    <div class="choice" id="scissors">
+        <img src="images/scissors.png" width = "120" height = "120" alt="">
+    </div>
+</div>
+
+<p id="action-message">Make your move</p>
+</body>
+</html>
